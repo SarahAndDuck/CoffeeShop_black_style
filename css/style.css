@@ -341,7 +341,7 @@ input {
     fill: #c99e71;
     -webkit-transition: 0.3s ease 0s;
     transition: 0.3s ease 0s;
-    background-image: url("./../CoffeeShop_black_style/src/images/play_hover.svg");
+    background-image: url("../../CoffeeShop_black_style/src/images/play_hover.svg");
   }
 }
 .feature__list {
