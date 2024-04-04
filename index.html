@@ -4,6 +4,993 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cofee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <nav class="nav-main">
+            <ul class="nav-main__list">
+              <li class="nav-main__item">
+                <a href="#" class="nav-main__link nav-main__link_selected"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-main__item">
+                <a href="#about" class="nav-main__link">About</a>
+              </li>
+              <li class="nav-main__item">
+                <a href="#" class="nav-main__link">Menu</a>
+              </li>
+              <li class="nav-main__item">
+                <a href="#booking" class="nav-main__link">Reservation</a>
+              </li>
+            </ul>
+            <a href="index.html" class="footer__logo logo">
+              <img
+                src="../CoffeeShop_black_style/src/images/logo.svg"
+                alt="logo"
+              />
+            </a>
+            <ul class="nav-main__list">
+              <li class="nav-main__item">
+                <a href="#" class="nav-main__link">Pages</a>
+              </li>
+              <li class="nav-main__item">
+                <a href="#" class="nav-main__link">Shop</a>
+              </li>
+              <li class="nav-main__item">
+                <a href="#" class="nav-main__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <button
+              class="header__search material-icons-outlined"
+              aria-label="search"
+            >
+              search
+            </button>
+            <button
+              class="header__shopping-bag material-icons-outlined"
+              aria-label="shopping-bag"
+            >
+              shopping_bag
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section id="banner" class="banner">
+          <div class="banner__wrapper">
+            <div class="container banner__container">
+              <div class="banner__content">
+                <h1 class="banner__title">Enjoy Your Morning Coffee.</h1>
+                <p class="banner__text">
+                  The coofee is brewed by fist roasting the green coffee beans
+                  over hot coals in brazier. given to Opportunity
+                </p>
+                <button class="banner__btn">Test Coffee</button>
+              </div>
+              <button class="banner__preview">Play video</button>
+            </div>
+          </div>
+        </section>
+        <section class="feature">
+          <div class="feature__container container">
+            <h2 class="feature__title visually-hidden">Feature</h2>
+            <ol class="feature__list">
+              <li class="feature__item">
+                <h3 class="feature__title"><span>01</span>Place to get lost</h3>
+                <div class="feature__images">
+                  <img src="./src/images/feature_1.jpg" alt="coffee" />
+                </div>
+              </li>
+              <li class="feature__item">
+                <h3 class="feature__title"><span>02</span>Proper roesting</h3>
+                <div class="feature__images">
+                  <img src="./src/images/feature_2.jpg" alt="coffee" />
+                </div>
+              </li>
+              <li class="feature__item">
+                <h3 class="feature__title">
+                  <span>03</span>Best Coffee Flavour
+                </h3>
+                <div class="feature__images">
+                  <img src="./src/images/feature_3.jpg" alt="coffee" />
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="about" class="about">
+          <div class="container about__container">
+            <div class="about__gallery">
+              <div class="about__image grid-item-1">
+                <img src="./src/images/feature_2.jpg" alt="cofee" />
+              </div>
+              <div class="about__image grid-item-2">
+                <img src="./src/images/feature_1.jpg" alt="cofee" />
+              </div>
+              <div class="about__image grid-item-3">
+                <img src="./src/images/feature_4.jpg" alt="cofee" />
+              </div>
+            </div>
+            <div class="about__content">
+              <p class="about__paragraph-header">Our history</p>
+              <h2 class="about__title">Create a new story with us</h2>
+              <p class="about__text">
+                mauris rhoncus in imperdiet placerat. vestibu emismd nisl
+                suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa
+                nibhtincidunt. donec et nibh maximus, est eu, mattis nuce.
+                preasent ut quam quis quam venen atis fringilla. morbi
+                vastibulum id tells mmodo mattis. aliauam erat volutpal.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="popular">
+          <div class="popular__container container">
+            <div class="popular__paragraph-header">Popular Product</div>
+            <h2 class="popular__title">Coffee popular Product</h2>
+            <ul class="popular__list">
+              <li class="popular__item">
+                <div class="popular__image">
+                  <img
+                    src="./src/images/popular.jpg"
+                    alt="brazil coffee gred"
+                  />
+                </div>
+                <div class="popular__grade grade">
+                  <p class="grade__header">Coffee</p>
+                  <ul class="grade__stars">
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="popular__item-header">brazil coffee gred</h3>
+                <div class="popular__price">
+                  Price-<span>$320.00/</span>$358
+                </div>
+                <button class="popular__item-btn">
+                  Add to cart
+                  <div class="popular__shopping-bag material-icons-outlined">
+                    shopping_bag
+                  </div>
+                </button>
+              </li>
+              <li class="popular__item">
+                <div class="popular__image">
+                  <img
+                    src="./src/images/popular.jpg"
+                    alt="brazil coffee gred"
+                  />
+                </div>
+                <div class="popular__grade grade">
+                  <p class="grade__header">Coffee</p>
+                  <ul class="grade__stars">
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="popular__item-header">brazil coffee gred</h3>
+                <div class="popular__price">
+                  Price-<span>$320.00/</span>$358
+                </div>
+                <button class="popular__item-btn">
+                  Add to cart
+                  <div class="popular__shopping-bag material-icons-outlined">
+                    shopping_bag
+                  </div>
+                </button>
+              </li>
+              <li class="popular__item">
+                <div class="popular__image">
+                  <img
+                    src="./src/images/popular.jpg"
+                    alt="brazil coffee gred"
+                  />
+                </div>
+                <div class="popular__grade grade">
+                  <p class="grade__header">Coffee</p>
+                  <ul class="grade__stars">
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star selected">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                    <li class="grade__star">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                          stroke="#C99E71"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="popular__item-header">brazil coffee gred</h3>
+                <div class="popular__price">
+                  Price-<span>$320.00/</span>$358
+                </div>
+                <button class="popular__item-btn">
+                  Add to cart
+                  <div class="popular__shopping-bag material-icons-outlined">
+                    shopping_bag
+                  </div>
+                </button>
+              </li>
+            </ul>
+            <a class="popular__btn" href="#">View all product</a>
+          </div>
+        </section>
+        <section class="cofee-machine">
+          <div class="cofee-machine__container container">
+            <div class="cofee-machine__image">
+              <img src="./src/images/cofee-machine.png" alt="cofee machine" />
+            </div>
+            <div class="cofee-machine__content">
+              <h2 class="cofee-machine__title">Coffee machine, buy for home</h2>
+              <p class="cofee-machine__text">
+                mauris rhoncus in imperdiet placerat. vestibu emismd nisl
+                suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa
+                nibhtincidunt. donec et nib maximus, est eu, mattis nuce.
+                preasent ut quam quis quam venen atis fri ngilla. morbi
+                vastibulum id tells mmodo mattis. aliauam erat volutpal.
+              </p>
+              <a href="" class="cofee-machine__btn">Discover now</a>
+            </div>
+          </div>
+        </section>
+        <section class="popular-menu">
+          <div class="popular-menu__container container">
+            <p class="popular-menu__paragraph-header">Menu</p>
+            <h2 class="popular-menu__title">Coffee popular menu</h2>
+            <div class="popular-menu__wrapper">
+              <div class="popular-menu__item">
+                <img
+                  class="popular-menu__image"
+                  src="./src/images/menu_1.jpg"
+                  alt="Americano rosted gred"
+                />
+                <div class="popular-menu__type-name">Americano rosted gred</div>
+                <div class="popular-menu__price">$12:00</div>
+              </div>
+              <div class="popular-menu__item">
+                <img
+                  class="popular-menu__image"
+                  src="./src/images/menu_1.jpg"
+                  alt="Americano rosted gred"
+                />
+                <div class="popular-menu__type-name">Americano rosted gred</div>
+                <div class="popular-menu__price">$12:00</div>
+              </div>
+              <div class="popular-menu__item">
+                <img
+                  class="popular-menu__image"
+                  src="./src/images/menu_1.jpg"
+                  alt="Americano rosted gred"
+                />
+                <div class="popular-menu__type-name">Americano rosted gred</div>
+                <div class="popular-menu__price">$12:00</div>
+              </div>
+              <div class="popular-menu__item">
+                <img
+                  class="popular-menu__image"
+                  src="./src/images/menu_1.jpg"
+                  alt="Americano rosted gred"
+                />
+                <div class="popular-menu__type-name">Americano rosted gred</div>
+                <div class="popular-menu__price">$12:00</div>
+              </div>
+              <div class="popular-menu__item">
+                <img
+                  class="popular-menu__image"
+                  src="./src/images/menu_1.jpg"
+                  alt="Americano rosted gred"
+                />
+                <div class="popular-menu__type-name">Americano rosted gred</div>
+                <div class="popular-menu__price">$12:00</div>
+              </div>
+              <div class="popular-menu__item">
+                <img
+                  class="popular-menu__image"
+                  src="./src/images/menu_1.jpg"
+                  alt="Americano rosted gred"
+                />
+                <div class="popular-menu__type-name">Americano rosted gred</div>
+                <div class="popular-menu__price">$12:00</div>
+              </div>
+              <div class="popular-menu__item">
+                <img
+                  class="popular-menu__image"
+                  src="./src/images/menu_1.jpg"
+                  alt="Americano rosted gred"
+                />
+                <div class="popular-menu__type-name">Americano rosted gred</div>
+                <div class="popular-menu__price">$12:00</div>
+              </div>
+              <div class="popular-menu__item">
+                <img
+                  class="popular-menu__image"
+                  src="./src/images/menu_1.jpg"
+                  alt="Americano rosted gred"
+                />
+                <div class="popular-menu__type-name">Americano rosted gred</div>
+                <div class="popular-menu__price">$12:00</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonial">
+          <div class="testimonial__container container">
+            <p class="testimonial__paragraph-header">Testimonial</p>
+            <h3 class="testimonial__title">Says our customers</h3>
+            <div class="testimonial__slide-wrapper">
+              <div class="testimonial__slide-list">
+                <div class="testimonial__slide-item">
+                  <div class="testimonial__row">
+                    <img
+                      class="testimonial__avatar"
+                      src="./src/images/testimonial_1.jpg"
+                      alt=""
+                    />
+                    <p class="testimonial__info">
+                      Education WP is a special build for effective education &
+                      Learning Management System site. Education WP is the next
+                      generation & one of the best education WordPress themes
+                      which all the strength of eLearning WP..
+                    </p>
+                  </div>
+                  <div class="testimonial__row">
+                    <div class="testimonial__personal-data">
+                      <div class="testimonial__name">John Smith</div>
+                      <div class="testimonial__position">Product Designer</div>
+                    </div>
+                    <div class="testimonial__grade grade">
+                      <ul class="grade__stars">
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial__slide-item">
+                  <div class="testimonial__row">
+                    <img
+                      class="testimonial__avatar"
+                      src="./src/images/testimonial_2.jpg"
+                      alt=""
+                    />
+                    <p class="testimonial__info">
+                      Education WP is a special build for effective education &
+                      Learning Management System site. Education WP is the next
+                      generation & one of the best education WordPress themes
+                      which all the strength of eLearning WP..
+                    </p>
+                  </div>
+                  <div class="testimonial__row">
+                    <div class="testimonial__personal-data">
+                      <div class="testimonial__name">Brett Lee</div>
+                      <div class="testimonial__position">
+                        User Experience Designer
+                      </div>
+                    </div>
+                    <div class="testimonial__grade grade">
+                      <ul class="grade__stars">
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                        <li class="grade__star selected">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10 1.66669L12.575 6.88335L18.3333 7.72502L14.1667 11.7834L15.15 17.5167L10 14.8084L4.85 17.5167L5.83333 11.7834L1.66666 7.72502L7.425 6.88335L10 1.66669Z"
+                              stroke="#C99E71"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial__footer">
+                <div class="testimonial__count count-testimonial">
+                  <b class="count-testimonial__text"
+                    ><span class="count-testimonial__current">2</span>/6
+                    People</b
+                  >
+                  <progress
+                    class="count-testimonial__progress"
+                    id="file"
+                    max="6"
+                    value="2"
+                  >
+                    2
+                  </progress>
+                </div>
+                <div class="testimonial__navigation-buttons">
+                  <div class="testimonial__left-button">
+                    <span class="material-symbols-outlined"> west </span>
+                  </div>
+                  <div
+                    class="testimonial__right-button navigation-buttons-active"
+                  >
+                    <span class="material-symbols-outlined"> east </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="booking" class="booking">
+          <div class="booking__container container">
+            <div class="booking__map">
+              <img src="./src/images/map.jpg" alt="map" />
+            </div>
+            <div class="booking__form-wrap">
+              <form class="booking__form">
+                <p class="booking__paragraph-header">Reservation</p>
+                <h2 class="booking__title">Booking a table</h2>
+                <input
+                  value="4 person"
+                  class="booking__input booking__input-person"
+                  type="text"
+                />
+                <input
+                  value="12.25, 2020"
+                  class="booking__input booking__data"
+                  type="text"
+                />
+                <input
+                  value="11:00 AM"
+                  class="booking__input booking__time"
+                  type="text"
+                />
+                <button class="booking__btn">BOOK S TABLE</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section id="news" class="news">
+          <div class="news__container container">
+            <p class="news__paragraph-header">Testimonial</p>
+            <h2 class="news__title">Our latest news</h2>
+            <div class="news__list">
+              <div class="news__item item-news">
+                <div class="item-news__image">
+                  <img src="./src/images/new_1.jpg" alt="cup of cofee" />
+                </div>
+                <div class="item-news__content">
+                  <div class="item-news__info">
+                    <p class="item-news__name"><span>By: </span>Rosaline</p>
+                    <time class="item-news__data">23.01.2021</time>
+                  </div>
+                  <p class="item-news__testimonial">
+                    Ideal cocktails from barmen
+                  </p>
+                  <a href="#" class="item-news__more">
+                    Read more
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="news__item item-news">
+                <div class="item-news__image">
+                  <img src="./src/images/new_2.jpg" alt="cup of cofee" />
+                </div>
+                <div class="item-news__content">
+                  <div class="item-news__info">
+                    <p class="item-news__name"><span>By: </span>Rosaline</p>
+                    <time class="item-news__data">23.01.2021</time>
+                  </div>
+                  <p class="item-news__testimonial">
+                    Ideal cocktails from barmen
+                  </p>
+                  <a href="#" class="item-news__more">
+                    Read more
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="news__item item-news">
+                <div class="item-news__image">
+                  <img src="./src/images/new_3.jpg" alt="cup of cofee" />
+                </div>
+                <div class="item-news__content">
+                  <div class="item-news__info">
+                    <p class="item-news__name"><span>By: </span>Rosaline</p>
+                    <time class="item-news__data">23.01.2021</time>
+                  </div>
+                  <p class="item-news__testimonial">
+                    Ideal cocktails from barmen
+                  </p>
+                  <a href="#" class="item-news__more">
+                    Read more
+                    <span class="material-symbols-outlined">
+                      arrow_forward
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__top">
+            <nav class="nav-main">
+              <a href="index.html" class="logo">
+                <img
+                  src="../CoffeeShop_black_style/src/images/logo.svg"
+                  alt="logo"
+                />
+              </a>
+              <ul class="nav-main__list">
+                <li class="nav-main__item">
+                  <a href="#" class="nav-main__link nav-main__link_selected"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-main__item">
+                  <a href="#booking" class="nav-main__link">Reservation</a>
+                </li>
+
+                <li class="nav-main__item">
+                  <a href="#" class="nav-main__link">Menu</a>
+                </li>
+                <li class="nav-main__item">
+                  <a href="#about" class="nav-main__link">About</a>
+                </li>
+                <li class="nav-main__item">
+                  <a href="#" class="nav-main__link">Pages</a>
+                </li>
+                <li class="nav-main__item">
+                  <a href="#" class="nav-main__link">Shop</a>
+                </li>
+                <li class="nav-main__item">
+                  <a href="#" class="nav-main__link">Blog</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__form-wraper">
+              <form action="" class="footer__form">
+                <input
+                  class="footer__input"
+                  type="email"
+                  placeholder="Enter your email"
+                />
+                <button class="footer__submit">
+                  <span class="material-symbols-outlined"> east </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <p class="footer__bottom">e-Tennis © 2021. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>
