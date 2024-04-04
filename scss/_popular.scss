@@ -1,0 +1,190 @@
+.popular {
+  // .popular__container
+
+  &__container {
+    text-align: center;
+  }
+  // .popular__paragraph-header
+
+  &__paragraph-header {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  // .popular__title
+
+  &__title {
+    text-align: center;
+    margin-bottom: 104px;
+  }
+
+  // .popular__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: start;
+  }
+
+  // .popular__item
+
+  &__item {
+    text-transform: uppercase;
+    align-items: center;
+    cursor: pointer;
+    height: 495px;
+    margin-bottom: 92px;
+  }
+
+  // .popular__image
+
+  &__image {
+    margin-bottom: 36px;
+    img {
+      width: 270px;
+      height: 343px;
+    }
+  }
+
+  // .popular__item-header
+
+  &__item-header {
+    font-family: "Righteous", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+  }
+
+  // .item-btn
+  &__item-btn {
+    display: none;
+    position: relative;
+    z-index: 1;
+    margin-top: 38px;
+    padding: 13px 21px 13px 56px;
+    font-family: "Urbanist", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: none;
+    font-size: 18px;
+    transition: 0.3s ease 0s;
+  }
+
+  // popular__shopping-bag
+
+  &__shopping-bag {
+    z-index: 2;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-60%);
+    background-color: transparent;
+    transition: 0.4s ease 0s;
+    color: #ffffff;
+    font-size: 24px;
+  }
+
+  // .popular__grade
+
+  &__grade {
+  }
+
+  // .popular__price
+
+  &__price {
+    margin-top: 20px;
+    transition: 0.3s ease 0s;
+    span {
+      color: #c99e71;
+    }
+  }
+
+  // .popular__item-button
+
+  &__item-button {
+  }
+
+  // .popular__btn
+
+  &__btn {
+    display: inline-flex;
+    padding: 20px 36px;
+  }
+}
+.grade {
+  height: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  // .grade__header
+
+  &__header {
+    color: #c99e71;
+    font-family: "Urbanist", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    font-size: 16px;
+  }
+
+  // .grade__stars
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  // .grade__star
+
+  &__star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    svg {
+      path {
+        fill: transparent;
+        transition: 0.3s ease 0s;
+      }
+
+      width: 16.67px;
+      height: 15.85px;
+    }
+  }
+  &__star.selected {
+    svg {
+      path {
+        fill: #c99e71;
+      }
+    }
+  }
+}
+
+@media (hover: hover) {
+  .popular__item:hover {
+    .popular__price,
+    .grade {
+      display: none;
+    }
+
+    .popular__item-btn {
+      animation: show-up 0.9s ease 0s;
+      display: inline-flex;
+    }
+
+    @keyframes show-up {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+        display: inline-flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+:root {
+  --font-family: "Urbanist", sans-serif;
+  --second-family: "Righteous", sans-serif;
+  --third-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Urbanist", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #14110e;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 85px;
+}
+.main {
+  flex: 1 1 auto;
+}
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+[class*="__paragraph-header"] {
+  color: #c99e71;
+  font-family: "Urbanist", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 180%;
+  font-size: 18px;
+}
+
+[class*="__title"] {
+  color: #ffffff;
+  font-family: "Righteous", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 130%;
+  font-size: 48px;
+}
+[class*="__text"] {
+  color: #ffffff;
+  font-family: "Urbanist", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 180%;
+  font-size: 16px;
+}
+[class*="__btn"],
+[class*="-btn"] {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 118%;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #c99e71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: 0.3s ease 0s;
+}
+.logo {
+  height: 60px;
+  flex: 0 0 72px;
+}
+@media (hover: hover) {
+  [class*="__btn"]:hover {
+    background-color: #7c4f1f;
+    transition: 0.3s ease 0s;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@import "reset";
+@import "header";
+@import "banner";
+@import "feature";
+@import "about";
+@import "about";
+@import "popular";
+@import "cofee-machine";
+@import "popular-menu";
+@import "testimonial";
+@import "booking";
+@import "news";
+@import "footer";

@@ -1,0 +1,56 @@
+.cofee-machine {
+  // .cofee-machine__container
+
+  &__container {
+    background-color: #1c1814;
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 80px;
+    gap: 25px;
+    max-width: 1170px;
+    flex-wrap: wrap;
+  }
+
+  // .cofee-machine__image
+
+  &__image {
+    width: 226px;
+    flex: 0 0 226px;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 226px;
+      max-height: 359px;
+    }
+  }
+
+  // .cofee-machine__content
+
+  &__content {
+    display: flex;
+    flex: 0 1 526px;
+    max-width: 530px;
+    flex-direction: column;
+    justify-content: top;
+    align-items: start;
+    gap: 36px;
+  }
+
+  // .cofee-machine__title
+
+  &__title {
+  }
+
+  // .cofee-machine__text
+
+  &__text {
+  }
+
+  // .cofee-machine__btn
+
+  &__btn {
+    padding: 20px 36px;
+  }
+}
+.container {
+}

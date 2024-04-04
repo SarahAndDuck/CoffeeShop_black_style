@@ -1,0 +1,43 @@
+.feature {
+  &__title {
+  }
+  // .feature__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+
+  // .feature__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 24px;
+  }
+
+  // .feature__title
+
+  &__title {
+    line-height: 125%;
+    font-size: 24px;
+
+    span {
+      margin-right: 12px;
+      color: #c99e71;
+    }
+  }
+
+  // .feature__images
+
+  &__images {
+    max-height: 420px;
+    max-width: 366px;
+    overflow: hidden;
+  }
+}
